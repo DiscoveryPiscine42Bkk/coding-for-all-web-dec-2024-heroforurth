@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+}
+
+table {
+    width: 100%; 
+    height: 100%;
+    border-collapse: collapse; 
+}
+
+td {
+    text-align: center; 
+    vertical-align: middle; 
+    font-size: 2em;
+    color: white;
+}
+
+.first-cell {
+    background-color: #ff3838; 
+}
+
+.second-cell {
+    background-color: #f896a4; 
+}
+
+
+@media (max-width: 768px) {
+    td {
+        font-size: 1.5em; 
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        display: block;
+    }
+    td {
+        display: block;
+        width: 100%; /* แต่ละช่องเต็มความกว้าง */
+        font-size: 1.2em;
+    }
+}
